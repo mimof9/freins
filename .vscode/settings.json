@@ -1,0 +1,18 @@
+{
+  // 让 vsc 的 eslint 插件支持 .vue 文件, 参考: https://eslint.vuejs.org/user-guide/#usage",
+  // "eslint.validate": [
+  //   "javascript",
+  //   "javascriptreact",
+  //   "vue"
+  // ],
+  // 保存时用eslint格式化
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // 关于 spaces 和 tab 的选择：使用 spaces
+  // 因为 tab 在不同编辑器中长度可能不一致
+  // 虽然编辑器可以把 tab 转成 spaces，但是这样会出现冲突
+  // Insert Spaces 配置，使输入 tab 时被替换成 spaces
+  // 1个 tab 等于 2个spaces
+  "editor.tabSize": 2
+}
