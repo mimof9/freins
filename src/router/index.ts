@@ -23,6 +23,11 @@ const router = createRouter({
       name: "shell",
       component: () => import("../views/ShellView.vue"),
     },
+    {
+      path: "/test",
+      name: "test",
+      component: () => import("../views/TestView.vue"),
+    },
   ],
 });
 

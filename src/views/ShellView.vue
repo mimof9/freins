@@ -42,9 +42,9 @@ function calcStrLines(str: string) {
 
 <style scoped>
 textarea {
-  /* outline: none; */
+  outline: none;
   border: none;
-  padding: 0 10px;
+  padding: 0;
   resize: none;
   overflow-y: hidden;
   box-sizing: border-box;
