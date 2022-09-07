@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Carousel from "@/components/Carousel.vue";
+import Test from "@/components/Test.vue";
 </script>
 
 <template>
-  <Carousel></Carousel>
+  <Test></Test>
 </template>

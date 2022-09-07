@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import("../views/ShellView.vue"),
     },
     {
+      path: "/quine",
+      name: "quine",
+      component: () => import("../views/QuineView.vue"),
+    },
+    {
       path: "/test",
       name: "test",
       component: () => import("../views/TestView.vue"),
