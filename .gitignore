@@ -1,3 +1,17 @@
+# local
+*.local
+node_modules
+
+# compiled output
+dist
+dist-ssr
+
+# Tests
+coverage
+.nyc_output
+cypress/videos/
+cypress/screenshots/
+
 # Logs
 logs
 *.log
@@ -7,22 +21,24 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
-
-/cypress/videos/
-/cypress/screenshots/
-
 # Editor directories and files
-# .vscode/*
-# !.vscode/extensions.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .idea
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS
+.DS_Store
