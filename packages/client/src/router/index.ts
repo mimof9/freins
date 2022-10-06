@@ -23,6 +23,11 @@ const router = createRouter({
       component: () => import("../views/TerminalView.vue"),
     },
     {
+      path: "/gl",
+      name: "gl",
+      component: () => import("../views/GLView.vue"),
+    },
+    {
       path: "/test",
       name: "test",
       component: () => import("../views/TestView.vue"),

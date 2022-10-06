@@ -1,1 +1,2 @@
-<template>this is a playground</template>
+<script setup lang="ts"></script>
+<template>Test</template>
