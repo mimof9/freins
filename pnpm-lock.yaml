@@ -8,6 +8,7 @@ importers:
   packages/client:
     specifiers:
       '@rushstack/eslint-patch': ^1.1.4
+      '@types/earcut': ^2.1.1
       '@types/jsdom': ^20.0.0
       '@types/lodash': ^4.14.184
       '@types/node': ^16.11.47
@@ -17,6 +18,7 @@ importers:
       '@vue/test-utils': ^2.0.2
       '@vue/tsconfig': ^0.1.3
       cypress: ^10.4.0
+      earcut: ^2.2.4
       eslint: ^8.21.0
       eslint-plugin-cypress: ^2.12.1
       eslint-plugin-vue: ^9.3.0
@@ -36,6 +38,7 @@ importers:
       xterm-addon-attach: ^0.7.0
       xterm-addon-fit: ^0.6.0
     dependencies:
+      earcut: 2.2.4
       lodash: 4.17.21
       pinia: 2.0.23_rg374xhldfcyvjtaj3qktyfz5y
       vue: 3.2.40
@@ -45,6 +48,7 @@ importers:
       xterm-addon-fit: 0.6.0_xterm@5.0.0
     devDependencies:
       '@rushstack/eslint-patch': 1.2.0
+      '@types/earcut': 2.1.1
       '@types/jsdom': 20.0.0
       '@types/lodash': 4.14.186
       '@types/node': 16.11.64
@@ -1297,6 +1301,10 @@ packages:
 
   /@types/cookiejar/2.1.2:
     resolution: {integrity: sha512-t73xJJrvdTjXrn4jLS9VSGRbz0nUY3cl2DMGDU48lKl+HR9dbbjW2A9r3g40VA++mQpy6uuHg33gy7du2BKpog==}
+    dev: true
+
+  /@types/earcut/2.1.1:
+    resolution: {integrity: sha1-VzoK9gnxcAXHUfb0/+xJz+NY6lE=}
     dev: true
 
   /@types/eslint-scope/3.7.4:
@@ -2990,6 +2998,10 @@ packages:
   /duplexer/0.1.2:
     resolution: {integrity: sha1-Or5DrvODX4rgd9E23c4PJ2sEAOY=}
     dev: true
+
+  /earcut/2.2.4:
+    resolution: {integrity: sha512-/pjZsA1b4RPHbeWZQn66SWS8nZZWLQQ23oE3Eam7aroEFGEvwKAsJfZ9ytiEMycfzXWpca4FA9QIOehf7PocBQ==}
+    dev: false
 
   /ecc-jsbn/0.1.2:
     resolution: {integrity: sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==}

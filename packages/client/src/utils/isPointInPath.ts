@@ -1,4 +1,4 @@
-import type { Vector2D } from "./vector2d";
+import { Vector2D } from "./vector2d";
 
 /**
  * 判断点是否在三角形内
@@ -33,4 +33,27 @@ function inTriangle(p1: Vector2D, p2: Vector2D, p3: Vector2D, point: Vector2D) {
   return s1 === s2 && s2 === s3;
 }
 
-export { inTriangle };
+function isPointInPath(
+  {
+    vertices,
+    cells,
+  }: {
+    vertices: [number, number][];
+    cells: Uint16Array;
+  },
+  point: Vector2D
+) {
+  let ret = false;
+  for (let i = 0; i < cells.length; i += 3) {
+    const p1 = new Vector2D(...vertices[cells[i]]);
+    const p2 = new Vector2D(...vertices[cells[i + 1]]);
+    const p3 = new Vector2D(...vertices[cells[i + 2]]);
+    if (inTriangle(p1, p2, p3, point)) {
+      ret = true;
+      break;
+    }
+  }
+  return ret;
+}
+
+export { inTriangle, isPointInPath };
