@@ -32,7 +32,7 @@
   </script>
   
   <template>
-    <div>
+    <div class="quine">
       <div>There is a Quine,</div>
       <div>You can check the Console Panel to see it!</div>
       <div>And some cheating way:</div>
@@ -40,5 +40,10 @@
     </div>
   </template>
   
-  <style scoped></style>
+<style scoped>
+.quine {
+  margin-top: 2rem;
+  text-align: center;
+}
+</style>
   

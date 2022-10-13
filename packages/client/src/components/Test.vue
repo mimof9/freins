@@ -1,25 +1,9 @@
-<script setup lang="ts">
-import { drawParticles } from "@/utils/drawParticles";
-import { onMounted, ref } from "vue";
-
-const canvas = ref<HTMLCanvasElement>();
-onMounted(() => {
-  if (canvas.value) {
-    // 创建 WebGL 上下文
-    const gl = canvas.value.getContext("webgl")!;
-
-    // drawParticles(gl);
-  }
-});
-</script>
-
+<script setup lang="ts"></script>
 <template>
-  <canvas width="500" height="500" ref="canvas"></canvas>
+  <div class="test-wrapper">test</div>
 </template>
-
 <style scoped>
-canvas {
-  width: 500px;
-  height: 500px;
+.test-wrapper {
+  text-align: center;
 }
 </style>

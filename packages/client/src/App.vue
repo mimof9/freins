@@ -5,21 +5,22 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <header>
-    <!-- <img
+    <img
       alt="Vue logo"
       class="logo"
       src="@/assets/logo.svg"
       width="125"
       height="125"
-    /> -->
+    />
 
     <div class="wrapper">
-      <!-- <HelloWorld msg="welcome to freins!" /> -->
+      <HelloWorld msg="Welcome to" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/quine">Quine</RouterLink>
         <RouterLink to="/terminal">Terminal</RouterLink>
+        <RouterLink to="/canvas">Canvas</RouterLink>
         <RouterLink to="/gl">GL</RouterLink>
         <RouterLink to="/test">Test</RouterLink>
       </nav>
