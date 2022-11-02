@@ -1,0 +1,38 @@
+// https://www.npmjs.com/package/cspell
+{
+  "version": "0.2",
+  "language": "en",
+  "useGitignore": true,
+  "dictionaryDefinitions": [
+      {
+        "name": "my",
+        "path": "./.cspell/dictionaries/my.txt"
+      },
+      {
+          "name": "dep",
+          "path": "./.cspell/dictionaries/dep.txt"
+      }
+  ],
+  "dictionaries": [
+    // 默认的
+    // "typescript",
+    // "node",
+    // "html",
+    // "css",
+    // "bash",
+    "my",
+    "dep"
+  ],
+  "ignorePaths": [
+      "*.yaml",
+      "*.patch",
+      "**/mocks/**",
+      "*.js",
+      "**/api-docs/*.json",
+      "**/api-docs/*.json",
+      "**/*.otf",
+      "**/*.sh",
+      "**/dist/**",
+      "**/coverage/**"
+  ]
+}
